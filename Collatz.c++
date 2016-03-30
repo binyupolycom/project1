@@ -13,7 +13,6 @@
 
 #include "Collatz.h"
 
-#include <iostream> // cin, cout
 #include <cstdio>
 #include <algorithm>
 
@@ -27,13 +26,11 @@ short arr[max_size] = { 0 };
 // collatz_read
 // ------------
 
-bool collatz_read(istream& r, int& i, int& j) {
-
+bool collatz_read (istream& r, int& i, int& j) {
     if (!(r >> i))
         return false;
     r >> j;
-    return true;
-}
+    return true;}
 
 // ------------
 // collatz_eval
@@ -78,10 +75,8 @@ int collatz_eval(int i, int j) {
 // collatz_print
 // -------------
 
-void collatz_print(ostream& w, int i, int j, int v) {
-
-    w << i << " " << j << " " << v << endl;
-}
+void collatz_print (ostream& w, int i, int j, int v) {
+    w << i << " " << j << " " << v << endl;}
 
 // -------------
 // collatz_solve
